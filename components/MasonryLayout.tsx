@@ -7,7 +7,7 @@ const MasonryLayout = ({ gallery }: { gallery: ArtType[] }) => {
   
   return (
     <Masonry
-      breakpointCols={{ default: 4, 1100: 4, 700: 3, 500: 1 }}
+      breakpointCols={{ default: 4, 1100: 3, 700: 2, 500: 1 }}
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column"
     >

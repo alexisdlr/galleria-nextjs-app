@@ -5,7 +5,7 @@ const Artwork = ({ artwork }: { artwork: ArtWorkType }) => {
   return (
     <Link
       href={`/artwork/${artwork.id}`}
-      className={`grid shadow-2xl rounded-md w-full h-fit relative group`}
+      className={`grid rounded-full< w-full h-fit relative group`}
     >
       <div className="relative">
         <img

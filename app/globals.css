@@ -30,6 +30,17 @@
 
 /* Style your items */
 .my-masonry-grid_column > a { /* change div to reference your elements you put in <Masonry> */
-  background: grey;
+  background: #fff;
   margin-bottom: 30px;
+  max-width: fit-content;
+}
+
+@media (max-width: 767px) {
+  .my-masonry-grid {
+    margin-left: 0;
+ 
+  }
+  .my-masonry-grid_column {
+    margin: 0 auto;
+  }
 }
