@@ -1,7 +1,7 @@
-import { Artwork } from "@/types";
+import { Artwork as ArtWorkType } from "@/types";
 import Link from "next/link";
 
-const Artwork = ({ artwork }: { artwork: Artwork }) => {
+const Artwork = ({ artwork }: { artwork: ArtWorkType }) => {
   return (
     <Link
       href={`/artwork/${artwork.name.replace(/\s/g, "-").toLowerCase()}`}
