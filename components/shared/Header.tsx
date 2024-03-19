@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MotionHeader } from "../animated/MotionHeader";
 
 function Header() {
   return (
-    <header className="w-full flex justify-between items-center pb-8 border-b border-[#E5E5E5]">
+    <MotionHeader
+      initial={{ opacity: 0, y: -100}}
+      animate={{ opacity: 100, y: 0}}
+      transition={{ delay: 0.5 }}
+      className="w-full flex justify-between items-center pb-8 border-b border-[#E5E5E5]"
+    >
       <Link href="/" className="lg:ml-2">
         <Image
           src="/assets/shared/logo.svg"
@@ -13,8 +19,10 @@ function Header() {
         />
       </Link>
 
-      <button className="uppercase text-xs tracking-wider">Start Slideshow</button>
-    </header>
+      <button className="uppercase text-xs tracking-wider">
+        Start Slideshow
+      </button>
+    </MotionHeader>
   );
 }
 
