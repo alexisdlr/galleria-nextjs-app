@@ -9,7 +9,7 @@ const Artwork = ({ artwork }: { artwork: ArtWorkType }) => {
     >
       <div className="relative">
         <img
-          src={artwork.images.thumbnail}
+          src={artwork?.images?.thumbnail}
           alt={artwork.name}
           className="group-hover:opacity-65 transition-all"
         />

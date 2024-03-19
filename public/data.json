@@ -56,7 +56,8 @@
       "gallery": "./assets/guernica/gallery.jpg"
     }
   },
-  { "id": 4,
+  {
+    "id": 4,
     "name": "Penitent Magdalene",
     "year": 1625,
     "description": "Penitent Magdalene is a painting by the Italian artist Artemisia Gentileschi. It hangs in Seville Cathedral. It has probably been in the cathedral since the late 17th century. The painting's first home was the collection of Fernando Enriquez Afan de Ribera, from 1626 to 1637. She returned to the subject later in the 1620s in Mary Magdalene as Melancholy.",
@@ -74,7 +75,8 @@
       "gallery": "./assets/penitent-magdalene/gallery.jpg"
     }
   },
-  { "id": 5,
+  {
+    "id": 5,
     "name": "The Storm on the Sea of Galilee",
     "year": 1633,
     "description": "The painting, in vertical format, shows a close-up view of Christ's disciples struggling frantically against the heavy storm to regain control of their fishing boat. A huge wave beats the bow and rips the sail. One of the disciples is seen vomiting over the side. Another one, looking directly out at the viewer, is a self-portrait of the artist. Only Christ, depicted on the right, remains calm.",
@@ -189,23 +191,25 @@
   },
   {
     "id": 11,
-    "name": "The Basket of Apples",
-    "year": 1893,
-    "description": "The Basket of Apples (French: Le panier de pommes) is a still life oil painting by French artist Paul Cézanne, which he created c. 1893. The painting is particularly remarkable for its creative composition, which rejected realistic representation in favour of distorting objects to create multiple perspectives. This approach eventually influenced other art movements, including Fauvism and Cubism. It belongs to the Helen Birch Bartlett Memorial Collection of the Art Institute of Chicago.",
-    "source": "https://en.wikipedia.org/wiki/The_Basket_of_Apples",
+    "name": "The Birth of Venus",
+    "year": 1486,
+    "description": "The Birth of Venus (Italian: Nascita di Venere [ˈnaʃʃita di ˈvɛːnere]) is a painting by the Italian artist Sandro Botticelli, probably made in the mid 1480s. It depicts the goddess Venus arriving at the shore after her birth, when she had emerged from the sea fully-grown (called Venus Anadyomene and often depicted in art). The painting is in the Uffizi Gallery in Florence, Italy.",
+    "source": "https://en.wikipedia.org/wiki/The_Birth_of_Venus",
     "artist": {
-      "image": "./assets/the-basket-of-apples/artist.jpg",
-      "name": "Paul Cézanne"
+      "image": "./assets/the-birth-of-venus/artist.jpg",
+      "name": "Sandro Botticelli"
     },
     "images": {
-      "thumbnail": "./assets/the-basket-of-apples/thumbnail.jpg",
+      "thumbnail": "./assets/the-birth-of-venus/thumbnail.jpg",
       "hero": {
-        "small": "./assets/the-basket-of-apples/hero-small.jpg",
-        "large": "./assets/the-basket-of-apples/hero-large.jpg"
+        "small": "./assets/the-birth-of-venus/hero-small.jpg",
+        "large": "./assets/the-birth-of-venus/hero-large.jpg"
       },
-      "gallery": "./assets/the-basket-of-apples/gallery.jpg"
+      "gallery": "./assets/the-birth-of-venus/gallery.jpg"
     }
+    
   },
+
   {
     "id": 12,
     "name": "The Boy in the Red Vest",
@@ -225,27 +229,9 @@
       "gallery": "./assets/the-boy-in-the-red-vest/gallery.jpg"
     }
   },
+
   {
     "id": 13,
-    "name": "Mona Lisa",
-    "year": 1503,
-    "description": "The Mona Lisa (/ˌmoʊnə ˈliːsə/; italian: La Gioconda [la dʒoˈkonda] or Monna Lisa [ˈmɔnna ˈliːza]) is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world\". The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.",
-    "source": "https://en.wikipedia.org/wiki/Mona_Lisa",
-    "artist": {
-      "image": "./assets/mona-lisa/artist.jpg",
-      "name": "Leonardo da Vinci"
-    },
-    "images": {
-      "thumbnail": "./assets/mona-lisa/thumbnail.jpg",
-      "hero": {
-        "small": "./assets/mona-lisa/hero-small.jpg",
-        "large": "./assets/mona-lisa/hero-large.jpg"
-      },
-      "gallery": "./assets/mona-lisa/gallery.jpg"
-    }
-  },
-  {
-    "id": 14,
     "name": "Arnolfini Portrait",
     "year": 1434,
     "description": "It is considered one of the most original and complex paintings in Western art, because of its beauty, complex iconography, geometric orthogonal perspective, and expansion of the picture space with the use of a mirror. According to Ernst Gombrich \"in its own way it was as new and revolutionary as Donatello's or Masaccio's work in Italy. A simple corner of the real world had suddenly been fixed on to a panel as if by magic ... For the first time in history the artist became the perfect eye-witness in the truest sense of the term\".",
@@ -263,7 +249,25 @@
       "gallery": "./assets/arnolfini-portrait/gallery.jpg"
     }
   },
-
+  {
+    "id": 14,
+    "name": "The Basket of Apples",
+    "year": 1893,
+    "description": "The Basket of Apples (French: Le panier de pommes) is a still life oil painting by French artist Paul Cézanne, which he created c. 1893. The painting is particularly remarkable for its creative composition, which rejected realistic representation in favour of distorting objects to create multiple perspectives. This approach eventually influenced other art movements, including Fauvism and Cubism. It belongs to the Helen Birch Bartlett Memorial Collection of the Art Institute of Chicago.",
+    "source": "https://en.wikipedia.org/wiki/The_Basket_of_Apples",
+    "artist": {
+      "image": "./assets/the-basket-of-apples/artist.jpg",
+      "name": "Paul Cézanne"
+    },
+    "images": {
+      "thumbnail": "./assets/the-basket-of-apples/thumbnail.jpg",
+      "hero": {
+        "small": "./assets/the-basket-of-apples/hero-small.jpg",
+        "large": "./assets/the-basket-of-apples/hero-large.jpg"
+      },
+      "gallery": "./assets/the-basket-of-apples/gallery.jpg"
+    }
+  },
   {
     "id": 15,
     "name": "The Swing",
@@ -281,6 +285,25 @@
         "large": "./assets/the-swing/hero-large.jpg"
       },
       "gallery": "./assets/the-swing/gallery.jpg"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Mona Lisa",
+    "year": 1503,
+    "description": "The Mona Lisa (/ˌmoʊnə ˈliːsə/; italian: La Gioconda [la dʒoˈkonda] or Monna Lisa [ˈmɔnna ˈliːza]) is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world\". The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.",
+    "source": "https://en.wikipedia.org/wiki/Mona_Lisa",
+    "artist": {
+      "image": "./assets/mona-lisa/artist.jpg",
+      "name": "Leonardo da Vinci"
+    },
+    "images": {
+      "thumbnail": "./assets/mona-lisa/thumbnail.jpg",
+      "hero": {
+        "small": "./assets/mona-lisa/hero-small.jpg",
+        "large": "./assets/mona-lisa/hero-large.jpg"
+      },
+      "gallery": "./assets/mona-lisa/gallery.jpg"
     }
   }
 ]
