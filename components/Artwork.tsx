@@ -4,7 +4,7 @@ import Link from "next/link";
 const Artwork = ({ artwork }: { artwork: ArtWorkType }) => {
   return (
     <Link
-      href={`/artwork/${artwork.name.replace(/\s/g, "-").toLowerCase()}`}
+      href={`/artwork/${artwork.id}`}
       className={`grid shadow-2xl rounded-md w-full h-fit relative group`}
     >
       <div className="relative">

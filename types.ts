@@ -13,6 +13,7 @@ export type Images = {
 };
 
 export type Artwork = {
+  id: number;
   name: string;
   year: number;
   description: string;
