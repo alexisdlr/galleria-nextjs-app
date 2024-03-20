@@ -2,6 +2,7 @@ import LightBox from "@/components/shared/Lightbox";
 import { getGallery } from "@/lib/actions/getGallery";
 import Image from "next/image";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 type SearchParamProps = {
   params: {
@@ -24,12 +25,13 @@ const ArtworkDetail = async ({
   const srcImg = artwork?.images?.hero?.large.substring(1);
   const galleryImg = artwork?.images?.gallery.substring(1);
   const artistImg = artwork?.artist?.image.substring(1);
+
   return (
     <>
-      <div className="my-4 lg:my-8">
+      <div className="my-2 lg:my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <div className="h-full relative">
-            <Image src={srcImg} alt={artwork?.name} width={450} height={450} />
+            <Image src={srcImg} alt={artwork?.name} width={400} height={400} />
             <LightBox images={[galleryImg]} />
             <div className=" absolute w-56 h-32 lg:w-72 lg:h-56 lg:flex flex-col items-start justify-center bg-white -bottom-10 -left-1 p-4 lg:bottom-auto lg:left-auto lg:-top-3 lg:-right-16 lg:p-10">
               <h2 className="font-bold text-2xl lg:text-4xl">
@@ -39,7 +41,7 @@ const ArtworkDetail = async ({
                 {artwork?.artist?.name}
               </h3>
             </div>
-            <div className="absolute left-3 -bottom-28 lg:left-auto lg:-bottom-8 lg:-right-16">
+            <div className="absolute left-3 -bottom-28 lg:left-auto lg:-bottom-8 lg:-right-6">
               <Image
                 src={artistImg}
                 alt={artwork?.name}
