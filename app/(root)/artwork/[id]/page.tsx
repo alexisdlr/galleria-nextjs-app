@@ -2,7 +2,7 @@ import LightBox from "@/components/shared/Lightbox";
 import { getGallery } from "@/actions/getGallery";
 import Image from "next/image";
 import Link from "next/link";
-import { redirect } from "next/navigation";
+import Progress from "@/components/shared/Progress";
 
 type SearchParamProps = {
   params: {
@@ -14,7 +14,7 @@ const ArtworkDetail = async ({
   params: { id },
 }: SearchParamProps) => {
   const artwork = await getGallery({ id });
-
+  const gallery = await getGallery({});
   if (!artwork) {
     return (
       <div className="flex w-full h-full my-20 items-center justify-center text-3xl">
@@ -29,10 +29,10 @@ const ArtworkDetail = async ({
   return (
     <>
       <div className="my-2 lg:my-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32">
           <div className="h-full relative">
             <Image src={srcImg} alt={artwork?.name} width={400} height={400} />
-            <LightBox images={[galleryImg]} />
+            <LightBox images={[galleryImg]}  />
             <div className=" absolute w-56 h-32 lg:w-72 lg:h-56 lg:flex flex-col items-start justify-center bg-white -bottom-10 -left-1 p-4 lg:bottom-auto lg:left-auto lg:-top-3 lg:-right-16 lg:p-10">
               <h2 className="font-bold text-2xl lg:text-4xl">
                 {artwork?.name}
@@ -66,6 +66,8 @@ const ArtworkDetail = async ({
           </div>
         </div>
       </div>
+      <Progress artwork={artwork} gallery={gallery} />
+
     </>
   );
 };
