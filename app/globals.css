@@ -44,3 +44,10 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 640px) {
+  .image {
+    width: 64px; /* Estilo para dispositivos móviles */
+    height: 64px;
+  }
+}
