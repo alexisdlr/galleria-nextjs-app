@@ -3,6 +3,7 @@ import { getGallery } from "@/actions/getGallery";
 import Image from "next/image";
 import Link from "next/link";
 import Progress from "@/components/shared/Progress";
+import { MotionDiv } from "@/components/animated/MotionDiv";
 
 type SearchParamProps = {
   params: {
@@ -28,7 +29,11 @@ const ArtworkDetail = async ({
 
   return (
     <>
-      <div className="my-2 lg:my-8">
+      <MotionDiv 
+        initial={{ opacity: 0, y: 50}}
+        animate={{ opacity: 1, y: 0}}
+        transition={{ delay: 0.3 }}
+        className="my-2 lg:my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mb-32">
           <div className="h-full relative">
             <Image src={srcImg} alt={artwork?.name} width={400} height={400} />
@@ -65,7 +70,7 @@ const ArtworkDetail = async ({
             </Link>
           </div>
         </div>
-      </div>
+      </MotionDiv>
       <Progress artwork={artwork} gallery={gallery} />
 
     </>
