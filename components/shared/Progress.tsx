@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Artwork } from "@/types";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Progress = ({
   artwork,
@@ -37,27 +38,29 @@ const Progress = ({
   };
 
   return (
-    <footer className="flex flex-col justify-between items-center w-full fixed bottom-0 left-0 px-10 py-3 bg-white">
+    <footer className="flex z-50 flex-col justify-between items-center w-full fixed bottom-0 left-0 px-2 lg:px-10 py-3 bg-white">
       <div className="w-full h-1 bg-gray-300 relative">
         <div
           className="absolute top-0 left-0 h-full bg-black"
           style={{ width: `${progressPercentage}%` }}
         />
       </div>
-      <div className="flex justify-between w-full mt-2">
-        <div className="">
-          <h2 className="font-bold">{artwork.name}</h2>
+      <div className="flex justify-between w-full mt-2 bg-white">
+        <div >
+          <h2 className="font-bold text-xs mb-1">{artwork.name}</h2>
           <p className="text-xs text-gray-500">{artwork.artist.name}</p>
         </div>
-        <div className="flex gap-6 items-center">
+        <div className="flex gap-6 items-center ">
           <button
             disabled={isDisabledPrev}
             onClick={goToPrevious}
             className={`${isDisabledPrev && "opacity-50 cursor-not-allowed"}`}
           >
-            <img
+            <Image
               src="/assets/shared/icon-back-button.svg"
               alt="previous icon"
+              width={20}
+              height={20}
             />
           </button>
           <button
@@ -65,7 +68,7 @@ const Progress = ({
             className={`${isDisabledNext && "opacity-50 cursor-not-allowed"}`}
             onClick={goToNext}
           >
-            <img src="/assets/shared/icon-next-button.svg" alt="next icon" />
+            <Image src="/assets/shared/icon-next-button.svg" alt="next icon" width={20} height={20} />
           </button>
         </div>
       </div>

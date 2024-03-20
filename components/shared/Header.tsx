@@ -16,7 +16,7 @@ function Header() {
           alt="logo"
           width={110}
           height={110}
-          className="w-20 h-20 lg:w-auto lg:h-auto"
+          className="w-20 h-8 lg:w-auto lg:h-auto"
         />
       </Link>
 
