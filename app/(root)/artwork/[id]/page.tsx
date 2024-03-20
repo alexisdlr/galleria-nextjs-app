@@ -39,7 +39,7 @@ const ArtworkDetail = async ({
                 {artwork?.artist?.name}
               </h3>
             </div>
-            <div className="absolute left-3 -bottom-20 lg:left-auto lg:-bottom-8 lg:-right-16">
+            <div className="absolute left-3 -bottom-28 lg:left-auto lg:-bottom-8 lg:-right-16">
               <Image
                 src={artistImg}
                 alt={artwork?.name}
@@ -49,7 +49,7 @@ const ArtworkDetail = async ({
               />
             </div>
           </div>
-          <div className="h-full flex flex-col items-start justify-center gap-10 w-ful lg:w-auto lg:max-w-96 lg:ml-20 mt-6 lg:mt-0 text-[#7D7D7D] relative">
+          <div className="h-full flex flex-col items-start justify-center gap-10 w-ful lg:w-auto lg:max-w-96 lg:ml-20 mt-10 lg:mt-0 text-[#7D7D7D] relative">
             <span className="font-bold text-[#F3F3F3] text-[90px] lg:text-[170px] absolute left-20 xs:left-32 -top-16 lg:-top-14 lg:left-6">
               {artwork.year}
             </span>
