@@ -1,5 +1,5 @@
 import { Artwork as ArtWorkType } from "@/types";
-import { getGallery } from "@/lib/actions/getGallery";
+import { getGallery } from "@/actions/getGallery";
 import MasonryLayout from "./MasonryLayout";
 import { MotionDiv } from "./animated/MotionDiv";
 

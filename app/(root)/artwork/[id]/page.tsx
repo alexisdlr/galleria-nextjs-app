@@ -1,5 +1,5 @@
 import LightBox from "@/components/shared/Lightbox";
-import { getGallery } from "@/lib/actions/getGallery";
+import { getGallery } from "@/actions/getGallery";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
