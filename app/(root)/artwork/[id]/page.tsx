@@ -40,7 +40,7 @@ const ArtworkDetail = async ({
                 {artwork?.artist?.name}
               </h3>
             </div>
-            <div className="absolute left-3 lg:left-auto lg:-bottom-8 lg:-right-16">
+            <div className="absolute left-3 -bottom-16 lg:left-auto lg:-bottom-8 lg:-right-16">
               <Image
                 src={artistImg}
                 alt={artwork?.name}
