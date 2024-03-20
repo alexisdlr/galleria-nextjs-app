@@ -14,7 +14,6 @@ const ArtworkDetail = async ({
   params: { id },
   searchParams,
 }: SearchParamProps) => {
-  
   const artwork = await getGallery({ id });
 
   if (!artwork) {
@@ -29,40 +28,37 @@ const ArtworkDetail = async ({
   const artistImg = artwork?.artist?.image.substring(1);
   return (
     <>
-      <div className="my-10">
+      <div className="my-4 lg:my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <div className="h-full relative ">
-            <Image
-              src={srcImg}
-              alt={artwork?.name}
-              width={450}
-              height={450}
-            />
+            <Image src={srcImg} alt={artwork?.name} width={450} height={450} />
             <LightBox images={[galleryImg]} />
-            <div className="absolute w-72 h-56 flex flex-col items-start justify-center bg-white -top-3 -right-16 p-10">
-              <h2 className="font-bold text-4xl">{artwork?.name}</h2>
+
+            <div className=" absolute w-56 h-32 lg:w-72 lg:h-56 lg:flex flex-col items-start justify-center bg-white -bottom-10 -left-1 p-4 lg:bottom-auto lg:left-auto lg:-top-3 lg:-right-16 lg:p-10">
+              <h2 className="font-bold text-xl lg:text-4xl">{artwork?.name}</h2>
               <h3 className="text-xs text-gray-500 my-3">
                 {artwork?.artist?.name}
               </h3>
             </div>
-            <div className="absolute -bottom-8 -right-16">
+            <div className="absolute left-3 lg:left-auto lg:-bottom-8 lg:-right-16">
               <Image
                 src={artistImg}
                 alt={artwork?.name}
                 width={150}
                 height={150}
+                className="w-[64px] h-[64px] lg:w-[150px] lg:h-[150px]"
               />
             </div>
           </div>
-          <div className="h-full flex flex-col items-start justify-center gap-10 max-w-96 ml-20 text-[#7D7D7D] relative">
-            <span className="font-bold text-[#F3F3F3] text-[170px] absolute -top-14 left-6">
+          <div className="h-full flex flex-col items-start justify-center gap-10 w-ful lg:w-auto lg:max-w-96 lg:ml-20 mt-6 lg:mt-0 text-[#7D7D7D] relative">
+            <span className="font-bold text-[#F3F3F3] text-[90px] lg:text-[170px] absolute left-20 -top-16 lg:-top-14 lg:left-6">
               {artwork.year}
             </span>
-            <p className="text-sm z-10 leading-6">{artwork.description}</p>
+            <p className="text-sm z-10 leading-6 ">{artwork.description}</p>
             <Link
               href={artwork?.source}
               target="_blank"
-              className="uppercase text-xs underline tracking-wider"
+              className="uppercase text-xs underline tracking-wider lg:translate-y-12"
             >
               Go to source
             </Link>

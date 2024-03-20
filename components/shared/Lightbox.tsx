@@ -9,7 +9,7 @@ const LightBox = ({ images }: { images: string[] }) => {
   return (
     <>
       <button
-        className="px-3 py-4 bg-black text-white uppercase text-xs tracking-widest flex gap-2 items-center absolute left-5 lg:bottom-5 hover:bg-opacity-65 transition-all"
+        className="px-3 py-4 bg-black text-white uppercase text-xs tracking-widest flex gap-2 items-center absolute left-5 top-5 lg:top-auto lg:bottom-5 hover:bg-opacity-65 transition-all"
         onClick={() => setOpen(true)}
       >
         <img src="/assets/shared/icon-view-image.svg" alt="view image icon" />
