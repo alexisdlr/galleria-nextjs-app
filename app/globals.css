@@ -42,6 +42,8 @@
   }
   .my-masonry-grid_column {
     margin: 0 auto;
+    padding: 0px; /* gutter size */
+
   }
 }
 
