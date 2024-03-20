@@ -14,6 +14,7 @@ const ArtworkDetail = async ({
   params: { id },
   searchParams,
 }: SearchParamProps) => {
+  
   const artwork = await getGallery({ id });
 
   if (!artwork) {
@@ -23,19 +24,21 @@ const ArtworkDetail = async ({
       </div>
     );
   }
-
+  const srcImg = artwork?.images?.hero?.large.substring(1);
+  const galleryImg = artwork?.images?.gallery.substring(1);
+  const artistImg = artwork?.artist?.image.substring(1);
   return (
     <>
       <div className="my-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <div className="h-full relative ">
             <Image
-              src={artwork?.images?.hero.large}
+              src={srcImg}
               alt={artwork?.name}
               width={450}
               height={450}
             />
-            <LightBox images={[artwork?.images?.gallery]} />
+            <LightBox images={[galleryImg]} />
             <div className="absolute w-72 h-56 flex flex-col items-start justify-center bg-white -top-3 -right-16 p-10">
               <h2 className="font-bold text-4xl">{artwork?.name}</h2>
               <h3 className="text-xs text-gray-500 my-3">
@@ -44,7 +47,7 @@ const ArtworkDetail = async ({
             </div>
             <div className="absolute -bottom-8 -right-16">
               <Image
-                src={artwork?.artist?.image}
+                src={artistImg}
                 alt={artwork?.name}
                 width={150}
                 height={150}

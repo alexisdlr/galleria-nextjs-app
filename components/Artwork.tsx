@@ -3,13 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Artwork = ({ artwork }: { artwork: ArtWorkType }) => {
+  const imgSrc = artwork?.images?.thumbnail.substring(1)
   return (
     <Link
       href={`/artwork/${artwork.id}`}
       className={`grid rounded-full< w-full h-fit relative group`}
     >
       <div className="relative">
-        <Image src={artwork?.images?.thumbnail} alt={artwork.name} width={300} height={300} className="group-hover:opacity-65 transition-all object-cover" />
+        <Image src={imgSrc} alt={artwork.name} width={300} height={300} className="group-hover:opacity-65 transition-all object-cover" />
        
         <div className="absolute bottom-0 w-full h-full bg-gradient-to-t from-black via-transparent to-transparent" />
       </div>
