@@ -7,12 +7,10 @@ type SearchParamProps = {
   params: {
     id: string;
   };
-  searchParams: URLSearchParams;
 };
 
 const ArtworkDetail = async ({
   params: { id },
-  searchParams,
 }: SearchParamProps) => {
   const artwork = await getGallery({ id });
 
@@ -30,12 +28,13 @@ const ArtworkDetail = async ({
     <>
       <div className="my-4 lg:my-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-          <div className="h-full relative ">
+          <div className="h-full relative">
             <Image src={srcImg} alt={artwork?.name} width={450} height={450} />
             <LightBox images={[galleryImg]} />
-
             <div className=" absolute w-56 h-32 lg:w-72 lg:h-56 lg:flex flex-col items-start justify-center bg-white -bottom-10 -left-1 p-4 lg:bottom-auto lg:left-auto lg:-top-3 lg:-right-16 lg:p-10">
-              <h2 className="font-bold text-2xl lg:text-4xl">{artwork?.name}</h2>
+              <h2 className="font-bold text-2xl lg:text-4xl">
+                {artwork?.name}
+              </h2>
               <h3 className="text-xs text-gray-500 my-3">
                 {artwork?.artist?.name}
               </h3>
