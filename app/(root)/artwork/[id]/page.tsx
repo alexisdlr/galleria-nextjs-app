@@ -51,7 +51,7 @@ const ArtworkDetail = async ({
             </div>
           </div>
           <div className="h-full flex flex-col items-start justify-center gap-10 w-ful lg:w-auto lg:max-w-96 lg:ml-20 mt-6 lg:mt-0 text-[#7D7D7D] relative">
-            <span className="font-bold text-[#F3F3F3] text-[90px] lg:text-[170px] absolute left-1/3 -top-16 lg:-top-14 lg:left-6">
+            <span className="font-bold text-[#F3F3F3] text-[90px] lg:text-[170px] absolute left-20 xs:left-32 -top-16 lg:-top-14 lg:left-6">
               {artwork.year}
             </span>
             <p className="text-sm z-10 leading-6 ">{artwork.description}</p>
