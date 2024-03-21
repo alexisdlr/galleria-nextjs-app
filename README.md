@@ -53,13 +53,12 @@ Users should be able to:
 ### What I learned
 
 Actually this challenge was relatively simple but I did learn some new things:
-```html
+
  <ul>
     <li>How to make a masonry layout, I learned it using the react-masonry-css library.</li>
     <li>How to make a lightbox with yet-another-react-lightbox.</li>
  </ul>
 
-```
 
 ### Continued development
 
