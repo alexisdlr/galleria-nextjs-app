@@ -70,6 +70,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Alexis De Leon](https://www.your-site.com)
-- Frontend Mentor - [@@alexisdlr](https://www.frontendmentor.io/profile/alexisdlr)
+- Website - [Alexis De Leon](https://alxs-blog.vercel.app/)
+- Frontend Mentor - [@alexisdlr](https://www.frontendmentor.io/profile/alexisdlr)
 
