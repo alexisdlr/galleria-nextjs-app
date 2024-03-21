@@ -41,7 +41,7 @@ const Header = () => {
       transition={{ delay: 0.5 }}
       className="w-full flex justify-between items-center pb-6 border-b border-[#E5E5E5] max-h-[60px] 2xl:max-h-[80px]"
     >
-      <Link href="/" className="lg:ml-2">
+      <Link href="/" className="lg:ml-2" onClick={stopSlideshow}>
         <Image
           src="/assets/shared/logo.svg"
           alt="logo"
