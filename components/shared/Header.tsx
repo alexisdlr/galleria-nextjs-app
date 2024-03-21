@@ -5,8 +5,7 @@ import { MotionHeader } from "../animated/MotionHeader";
 function Header() {
   return (
     <MotionHeader
-      initial={{ opacity: 0, y: -100}}
-      animate={{ opacity: 100, y: 0}}
+      animate={{ opacity: [0,100], y:[-100,0]}}
       transition={{ delay: 0.5 }}
       className="w-full flex justify-between items-center pb-6 border-b border-[#E5E5E5] max-h-[60px]"
     >

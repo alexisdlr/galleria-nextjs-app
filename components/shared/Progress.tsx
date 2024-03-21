@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Artwork } from "@/types";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { MotionFooter } from "../animated/MotionFooter";
 
 const Progress = ({
   artwork,
@@ -38,7 +39,10 @@ const Progress = ({
   };
 
   return (
-    <footer className="flex z-50 flex-col justify-between items-center w-full fixed bottom-0 left-0 px-2 lg:px-10 py-3 bg-white">
+    <MotionFooter 
+    animate={{ opacity: [0, 1], y: [50, 0] }}
+    transition={{ delay: 0.7 }}
+    className="flex z-50 flex-col justify-between items-center w-full fixed bottom-0 left-0 px-2 lg:px-10 py-3 bg-white">
       <div className="w-full h-1 bg-gray-300 relative">
         <div
           className="absolute top-0 left-0 h-full bg-black"
@@ -72,7 +76,7 @@ const Progress = ({
           </button>
         </div>
       </div>
-    </footer>
+    </MotionFooter>
   );
 };
 

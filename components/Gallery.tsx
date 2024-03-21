@@ -8,8 +8,7 @@ const Gallery = async () => {
 
   return (
     <MotionDiv
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: [0, 1] }}
       className="mt-10"
     >
       <MasonryLayout gallery={gallery} />
