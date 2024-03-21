@@ -45,7 +45,7 @@ const Progress = ({
     className="flex z-50 flex-col justify-between items-center w-full fixed bottom-0 left-0 px-2 lg:px-10 py-3 bg-white 2xl:px-12">
       <div className="w-full h-px bg-gray-300 relative">
         <div
-          className="absolute top-0 left-0 h-full bg-black"
+          className="absolute top-0 left-0 h-full bg-black transition-all"
           style={{ width: `${progressPercentage}%` }}
         />
       </div>
