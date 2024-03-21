@@ -42,8 +42,8 @@ const Progress = ({
     <MotionFooter 
     animate={{ opacity: [0, 1], y: [50, 0] }}
     transition={{ delay: 0.7 }}
-    className="flex z-50 flex-col justify-between items-center w-full fixed bottom-0 left-0 px-2 lg:px-10 py-3 bg-white">
-      <div className="w-full h-1 bg-gray-300 relative">
+    className="flex z-50 flex-col justify-between items-center w-full fixed bottom-0 left-0 px-2 lg:px-10 py-3 bg-white 2xl:px-12">
+      <div className="w-full h-px bg-gray-300 relative">
         <div
           className="absolute top-0 left-0 h-full bg-black"
           style={{ width: `${progressPercentage}%` }}
@@ -51,8 +51,8 @@ const Progress = ({
       </div>
       <div className="flex justify-between w-full mt-2 bg-white">
         <div >
-          <h2 className="font-bold text-xs mb-1">{artwork.name}</h2>
-          <p className="text-xs text-gray-500">{artwork.artist.name}</p>
+          <h2 className="font-bold text-xs mb-1 2xl:text-lg">{artwork.name}</h2>
+          <p className="text-xs text-gray-500 2xl:text-base">{artwork.artist.name}</p>
         </div>
         <div className="flex gap-6 items-center ">
           <button
