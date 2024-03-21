@@ -1,5 +1,6 @@
 import Header from "@/components/shared/Header";
 import React from "react";
+import "yet-another-react-lightbox/styles.css";
 
 export default function RootLayout({
   children,
