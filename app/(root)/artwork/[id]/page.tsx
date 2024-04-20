@@ -43,7 +43,7 @@ const ArtworkDetail = async ({ params: { id } }: SearchParamProps) => {
             />
             <LightBox images={[galleryImg]} />
             <div className=" absolute w-56 h-32 lg:w-72 lg:h-56 lg:flex flex-col items-start justify-center bg-white -bottom-10 -left-1 p-4 md:bottom-auto md:left-auto md:w-72 md:h-48 md:p-8 md:right-[100px] md:-top-2 lg:-top-3 lg:-right-16 2xl:-top-2 2xl:-right-12 lg:p-10 2xl:p-20 2xl:w-96 2xl:h-60">
-              <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl">
+              <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl">
                 {artwork?.name}
               </h2>
               <h3 className="text-xs text-gray-500 my-3 md:text-sm 2xl:text-sm">
